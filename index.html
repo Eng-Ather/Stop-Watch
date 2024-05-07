@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="stopwtch.css">
+</head>
+<body>
+    
+<h1> STOPWATCH</h1>
+
+<div class="centerBox">
+    <div class="displayScreen" >
+        <span id="min">00</span>
+        <span id="sec">00</span>
+        <span id="ms">00</span>
+    </div>
+
+    <div>
+        <button onclick="start()"  id="start_btn" >START</button>
+        <button onclick="paus()">PAUS</button>
+        <button onclick="reset()">RESET</button>
+        <!-- <button onclick="paus()">PAUS</button>
+        <button onclick="stop()">STOP</button> -->
+    </div>
+</div>
+
+<script src="stopwatch.js"></script>
+</body>
+</html>
