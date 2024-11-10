@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     
 }
@@ -93,5 +93,129 @@ span {
          display: flex;
         margin-top: 20px;
         background-color: rgba(255, 255, 255, 0.4);
+    }
+} */
+
+/* _________________________ */
+ /* Global Reset */
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f4f8; /* Light background */
+    color: #333;
+}
+
+h1 {
+    margin:40px auto;
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    /* margin-bottom: 40px; */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Stopwatch container */
+.centerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    /* padding: 30px; */
+    margin:10px ;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Stopwatch display screen */
+.displayScreen {
+    margin: 0px auto;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #444;
+    /* margin-bottom: 20px; */
+}
+
+.displayScreen span {
+    margin: 0px auto;
+    margin: 0 10px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Buttons container */
+div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Styling for buttons */
+button {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#start_btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#start_btn:hover {
+    background-color: #45a049;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Paus Button */
+button:nth-child(2) {
+    background-color: #f39c12;
+    color: white;
+}
+
+button:nth-child(2):hover {
+    background-color: #e67e22;
+}
+
+/* Reset Button */
+button:nth-child(3) {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button:nth-child(3):hover {
+    background-color: #c0392b;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    .displayScreen {
+        font-size: 2.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
     }
 }
